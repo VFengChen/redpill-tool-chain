@@ -7,5 +7,5 @@
     },
     "synoinfo": {},
     "ramdisk_copy": {},
-    "extensions": [redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json]
+    "extensions": redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json
 }
