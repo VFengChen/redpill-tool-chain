@@ -21,7 +21,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+      - name: 添加驱动
+        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json
       - name: Chmod
         run: chmod 0755 ./redpill_tool_chain.sh
 
