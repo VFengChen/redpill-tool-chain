@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: DS3615
+name: DS3615xs
 
 # Controls when the workflow will run
 on:
@@ -25,6 +25,8 @@ jobs:
         run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json
       - name: 添加vmxnet3驱动
         run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/vmxnet3/rpext-index.json
+      - name: 添加VM_SCSI驱动
+        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/vmw_pvscsi/rpext-index.json
       - name: Chmod
         run: chmod 0755 ./redpill_tool_chain.sh
 
@@ -36,5 +38,5 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: DS3615
+          name: DS3615xs
           path: ./images
