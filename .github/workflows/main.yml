@@ -21,12 +21,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: 添加r8125驱动
-        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8125/rpext-index.json
-      - name: 添加vmxnet3驱动
-        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/vmxnet3/rpext-index.json
-      - name: 添加VM_SCSI驱动
-        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/vmw_pvscsi/rpext-index.json
+      - name: 添加r8168驱动
+        run: ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/blob/main/r8168/rpext-index.json
       - name: Chmod
         run: chmod 0755 ./redpill_tool_chain.sh
 
