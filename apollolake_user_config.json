@@ -1,7 +1,7 @@
 {
     "extra_cmdline": {
-        "pid": "0x5567",
-        "vid": "0x0781",
+        "pid": "0x1000",
+        "vid": "0x090C",
         "sn": "VYBQLPFOJD4CS",
         "mac1": "E0D55E6D2B4B"
     },
